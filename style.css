@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4e0;
+    color: #1d1d1d;
+    line-height: 1.6;
+} 
+
+.container{
+    max-width: 1280px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+/*Cabeçalho*/
+header{
+    padding: 16px 0px;
+    background-color: #7e087e;
+    color: #ecf0f1;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-size: 32px;
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container a{
+    font-family: 'Bungee', cursive;
+}
+
+/* Seção 'Sobre a loja' */
+#about h2{
+    color: #7e087e;
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+    border-bottom: 2px solid currentColor; 
+    padding-bottom: 3px; 
+}
+
+#about p{
+    margin-top: 20px;
+    color: #1d1d1d;
+}
+
+#about {
+    background-color: #f4f4f4f3;
+    padding: 40px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+#about img {
+    width: 640px;
+    margin-right: 40px;
+    border-radius: 8px;
+}
+
+#about .container{
+    display: flex;
+}
+
+/* Seção de Produtos */
+#products {
+    background-color: #f4f4f4f3;
+    padding: 32px 0;
+}
+
+#products h2 {
+    color: #7e087e;
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+    border-bottom: 2px solid currentColor; 
+    padding-bottom: 3px; 
+    margin-bottom: 60px;
+}
+
+.produto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #1d1d1d;
+}
+
+.produto p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #1d1d1d;
+    margin-bottom: 12px;
+}
+
+.produto button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.produto button:hover {
+    background-color: #218838;
+}
+
+/* Roda-pé */
+footer{
+    background-color: #7e087e;
+    color: #ecf0f1;
+    padding: 16px 0px;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Responsividadade */
+
+/*Layout Mobile (até 640px)*/
+@media (max-width: 640px) {
+    header {
+        padding: 12px 0;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    header nav li a {
+        display: block;
+    }
+
+    #about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about img {
+        width: 100%;
+        height: 50%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .produto {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .produto h3 {
+        font-size: 18px;
+    }
+
+    .produto p {
+        font-size: 14px;
+    }
+
+    .produto button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/*Layout Tablet (de 641px até 1023px)*/
+@media (min-width: 641px) and (max-width: 1023px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header nav li {
+        font-size: 16px;
+    }
+
+    #about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .produto {
+        width: 45%;
+    }
+}
